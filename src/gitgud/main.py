@@ -217,6 +217,8 @@ class MainScreen(Screen):
             self.notify(
                 "No project URL yet — load a project first.", severity="warning"
             )
+        cards = list(self.query(TaskCard))
+        (cards[0] if cards else self).focus()
 
     def action_pick_theme(self) -> None:
         names = sorted(self.app.available_themes)
