@@ -45,10 +45,3 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e .
 gitgud            # or: python -m gitgud
 ```
-
-## Build & publish
-
-```sh
-python -m build              # produces dist/*.whl and dist/*.tar.gz
-python -m twine upload dist/*  # optional: publish to PyPI
-```
