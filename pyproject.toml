@@ -1,0 +1,29 @@
+[project]
+name = "gitgud"
+version = "0.1.0"
+description = "A Textual TUI for GitHub Projects"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=8.2",
+    "rich>=13",
+]
+
+[project.scripts]
+gitgud = "gitgud.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gitgud"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+]
+
+[tool.basedpyright]
+# Tame basedpyright's strict "recommended" default; matches pyright's standard.
+typeCheckingMode = "standard"
