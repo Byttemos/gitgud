@@ -20,10 +20,10 @@ Install as an isolated tool straight from the repository:
 
 ```sh
 # with pipx
-pipx install git+https://github.com/<you>/gitgud.git
+pipx install git+https://github.com/Byttemos/gitgud.git
 
 # or with uv
-uv tool install git+https://github.com/<you>/gitgud.git
+uv tool install git+https://github.com/Byttemos/gitgud.git
 ```
 
 ## Usage
